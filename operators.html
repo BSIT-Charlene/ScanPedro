@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Franchise Operators | Scan Pedro</title>
+  <link rel="stylesheet" href="./css/boxicons.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fonts/poppins.css">
+  <link rel="stylesheet" href="./css/sidenav.css">
+  <link rel="stylesheet" href="./css/operators.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-scan">
+      <i class='bx bx-qr-scan logo'></i>
+      <div class="scan-text">
+        <span class="text1"><i>Scan Pedro</i></span>
+        <br>
+        <span class="text2">QR-Code Record Management System of Transportation Regulatory Unit, City of San Pedro, Laguna</span>
+      </div>
+    </div>
+    <div class="user-config">
+      <span>Administrator</span>
+      <div class="config-drop">
+        <i class='bx bxs-user user-icon'></i>
+        <i class='bx bxs-down-arrow arrow-icon'></i>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="sidenav">
+    <div class="collapse-btn">
+      <i class='bx bx-menu'></i>
+    </div>
+    <div class="options">
+      <span class="category">User Panel</span>
+      <ul class="user-panel">
+        <a href="dashboard.html"><li class="list"><i class='bx bxs-dashboard'></i><span> Dashboard</span></li></a>
+        <a href="application.html"><li class="list"> <i class='bx bxs-spreadsheet' ></i><span> Application Form</span></li></a>
+        <li><i class='bx bxs-copy-alt'></i><span> Records</span></li>
+        <a href="operators.html"><li class="list selected"><i class='bx bxs-user-rectangle'></i><span> Franchise Operator</span></li></a>
+        <a href="drivers.html"><li class="list"><i class='bx bxs-user-rectangle'></i><span> Tricycle Drivers</li></a>
+        <a href="violations.html"><li class="list"><i class='bx bxs-traffic'></i><span> Violations</span></li></a>
+      </ul>
+      <span class="category">Manage</span>
+      <ul class="manage">
+        <a href="users.html"><li class="list"><i class='bx bxs-user-detail'></i><span> Manage Users</span></li></a>
+        <a href="reports.html"><li class="list"><i class='bx bxs-report'></i><span> Reports</span></li></a>
+        <a href="logs.html"><li class="list"><i class='bx bxs-report'></i><span> Logs</span></li></a>
+      </ul>
+    </div>
+  </div>
+
+  <!--Page Content-->
+  <main class="content-wrapper">
+    <div class="container-fluid">
+      <header>
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="info-bold">Official Records</h5>
+          <div class="buttons">
+            <button class="btn btn-success"><i class="bx bx-edit"></i> Edit</button>
+            <button class="btn btn-outline-secondary"><i class="bx bx-trash"></i></button>
+            <button class="btn btn-outline-secondary"><i class="bx bx-upload"></i></button>
+          </div>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card records-card">
+            <div class="row">
+              <div class="col">
+                <div class="view-date">
+                  <p class="info-bold">Franchise Operator</p>
+                  <hr>
+                <!-- Add search bar -->
+                <div class="search-filter-sort">
+                  <div class="search-bar">
+                    <div class="input-group">
+                      <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="bx bx-search"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Sort dropdown -->
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort By
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="sortDropdown">
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <a class="dropdown-item" href="#">Option 3</a>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+
+              <div class="col">
+                <div class="view-container">
+                </div>  
+              </div>
+            </div>
+
+            <table class="headerRecord">
+              <thread>
+                <tr>
+                <th class="bordertable">
+                  <input type="checkbox" id="select-all" onchange="toggleAllCheckboxesJ()">
+              </th>
+              <th class="bordertable">#</th>
+              <th class="bordertable">Franchise Number</th>
+              <th class="bordertable">Franchise Holder</th>
+              <th class="bordertable">House Number</th>
+              <th class="bordertable">Baranggay</th>
+              <th class="bordertable">Contact Number</th>
+              <th class="bordertable">TODA Association</th>
+              <th class="bordertable">Franchise Validity</th>
+              </tr>
+              </thread>
+              
+            <table>
+
+              <tr>
+                <th>Name</th>
+                <th>Traffic Violation</th>
+                <th>Date & Time</th>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+              <tr>
+                <td>Juan Dela Cruz</td>
+                <td>No Helmet</td>
+                <td>August 14, 2023 7:19:00 PM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      
+    </div>
+  </main>
+
+  <script src="./js/sidenav.js"></script>
+  <script>
+    const toggleBtn = document.querySelector('.collapse-btn');
+    const sidenav = document.querySelector('.sidenav');
+    const contentWrapper = document.querySelector('.content-wrapper')
+
+    toggleBtn.addEventListener('click', () => {
+      sidenav.classList.toggle('collapsed');
+    });
+  </script>
+
+</body>
+</html>

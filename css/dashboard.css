@@ -1,0 +1,73 @@
+
+body {
+  background-image: url('cityhall.jpg');
+}
+
+.card{
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+  color: #004402;
+}
+
+.info span{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb01d25;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.image i{
+  font-size: 40px;
+  color: #FFB01D;
+}
+
+.stats .col, .stats .row{
+  padding: 0px;
+  flex-wrap: nowrap;
+}
+
+.violation-card{
+  flex-direction: column;
+}
+
+.col-8{
+  padding: 0;
+}
+
+.violation-card .row{
+  width: 100%;
+}
+
+.violation-card .view-container{
+  display: flex;
+  justify-content: right;
+}
+
+.violation-card .view-date{
+  flex-direction: column;
+}
+
+.violation-card table{
+  width: 100%;
+  text-align: center;
+  overflow-x: auto;
+}

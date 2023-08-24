@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.page-section {
+  display: flex;
+}
+
+.title-side {
+  padding: 0;
+  height: 100vh;
+}
+
+.cityhall-img {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cityhall-img img {
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(6);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 68, 2, 0.9);
+  z-index: 1;
+}
+
+.title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 100px;
+}
+
+.logo-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center center;
+  padding: 10px;
+}
+
+.tru-text{
+  color: #FFB01D;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tru-text-2{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tru-text-3{
+  color: white;
+  padding: 70px;
+}
+
+.login-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #004402;
+}
+
+.logo{
+  font-size: 150px;
+}
+
+.scanpedro-text{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.scanpedro-text-2{
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
+
+.input{
+  width: 300px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.input span{
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.input input{
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 6px 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.input select{
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 6px 10px;
+  font-size: 15px;
+}
+
+.input option{
+  text-align: left;
+}
+
+.login-side a{
+  font-size: 15px;
+  color: #004402;
+}
+
+.login-side .login-btn{
+  text-align: center;
+  background-color: #004402;
+  border: none;
+  color: white;
+  padding: 10px 0px;
+  font-size: 15px;
+  transition: all ease .2s;
+}
+
+.login-btn:hover{
+  background-color: #062407;
+  cursor: pointer;
+  transition: all ease .2s;
+}
+
+.forgot-pw{
+  width: 300px;
+  padding: 5px;
+  justify-content: right;
+  display: flex;
+}
+
+.input .input-with-icon {
+  position: relative;
+}
+
+.input .input-with-icon input{
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 6px 45px 6px 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.input .input-with-icon .hide-icon {
+  position: absolute;
+  top: 50%;
+  left: 295px;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 20px;
+}
+
+.hide-icon:hover{
+  cursor: pointer;
+}

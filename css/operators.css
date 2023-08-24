@@ -1,0 +1,98 @@
+.card{
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 10px 20px 10px;
+  color: #004402;
+}
+
+.info-bold {
+  font-weight: bold;
+}
+
+hr{
+  width: 100%;
+}
+
+.stats .col, .stats .row{
+  padding: 0px;
+  flex-wrap: nowrap;
+}
+
+.records-card{
+  flex-direction: column;
+}
+
+.col-12{
+  padding: 0;
+}
+
+.records-card .row{
+  width: 100%;
+}
+
+.records-card .view-container{
+  display: flex;
+  justify-content: right;
+}
+
+.records-card .view-date{
+  flex-direction: column;
+}
+
+.records-card table{
+  width: 100%;
+  text-align: center;
+  overflow-x: auto;
+}
+
+/* Style for the buttons */
+.buttons {
+  display: flex;
+  justify-content: right; 
+  margin-top: 10px;
+}
+
+.buttons button {
+  margin-left: 10px; 
+}
+
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  margin-left: 10px;
+}
+
+.filter-sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.filter-sort input {
+  margin-left: 10px;
+}
+.search-filter-sort {
+  display: flex;
+  align-items: center;
+}
+
+.headerRecord {
+  text-align:center; 
+  margin-left:40px; 
+  margin-top:10px; 
+  color:var(--color-content-text); 
+  min-width:90%;
+  padding: 0%;
+}
+
+
+
+
